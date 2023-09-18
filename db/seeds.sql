@@ -10,9 +10,9 @@ VALUES ('Associate', 45000, 1),
        ('Director', 120000, 2);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
-  ('John', 'Doe', 1, 3), -- John Doe has no manager (NULL)
-  ('Jane', 'Smith', 2, 1),  -- Jane Smith's manager is John Doe (employee_id = 1)
-  ('Bob', 'Johnson', 3, 1), -- Bob Johnson's manager is John Doe (employee_id = 1)
-  ('Alice', 'Williams', 4, 2), -- Alice Williams's manager is Jane Smith (employee_id = 2)
-  ('Eve', 'Davis', 5, 2); -- Eve Davis's manager is Jane Smith (employee_id = 2)
+  ('John', 'Doe', 1, 3),
+  ('Jane', 'Smith', 2, 1),  
+  ('Bob', 'Johnson', 3, 1), 
+  ('Alice', 'Williams', 4, 2), 
+  ('Eve', 'Davis', 5, 2); 
 

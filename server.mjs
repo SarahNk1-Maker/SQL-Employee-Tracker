@@ -4,7 +4,7 @@ import mysql from 'mysql2'
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'Snowinmilton@1',
+  password: '', // Taking out the password for safety reasons
   database: 'employee_db'
 });
 
@@ -91,9 +91,6 @@ function viewEmployees() {
 }
 
 
-
-// Add the remaining functions (addRole, addEmployee, updateEmployeeRole) in a similar fashion
-//
 function addDepartment() {
   db.query('INSERT INTO Department (department_name) VALUES ("customer_retention")', (err, results) => {
     if (err) throw err;
